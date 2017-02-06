@@ -13,14 +13,14 @@ var server = function() {
 }
 
 // Render our MJML to HTML
-gulp.task('build', () => {
+gulp.task('build', function() {
   return gulp.src('./mjml/**/*.mjml')
     .pipe(mjml())
     .pipe(gulp.dest('./html'))
 })
 
 // Launch our HTML after rendering
-gulp.task('default', gulp.series('build', () => {
+gulp.task('default', gulp.series('build', function() {
 	server();
 	gulp.watch('./mjml/**/*.mjml')
 		.on('change', gulp.series('build', browserSync.reload))
