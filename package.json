@@ -1,0 +1,16 @@
+{
+  "name": "mjml-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate MJML email template with gulp tasks.",
+  "main": "mjml/index.mjml",
+  "scripts": {
+    "test": "none"
+  },
+  "author": "Robert Roth",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-mjml": "^2.0.0"
+  }
+}
